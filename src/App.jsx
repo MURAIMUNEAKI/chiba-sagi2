@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, AlertTriangle, Phone, Lock, CheckCircle, XCircle } from 'lucide-react';
 import { scenario, results } from './data';
@@ -81,7 +81,12 @@ function StartScreen({ onStart }) {
   );
 }
 
+
 function QuestionScreen({ data, onAnswer }) {
+  const shuffledChoices = useMemo(() => {
+    return [...data.choices].sort(() => Math.random() - 0.5);
+  }, [data]);
+
   return (
     <motion.div
       className="screen question-screen"
@@ -100,7 +105,7 @@ function QuestionScreen({ data, onAnswer }) {
       </div>
       <p className="question-text">{data.text}</p>
       <div className="choices">
-        {data.choices.map((choice, index) => (
+        {shuffledChoices.map((choice, index) => (
           <button
             key={index}
             className="btn-choice"
