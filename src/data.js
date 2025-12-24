@@ -3,7 +3,7 @@ export const scenario = [
         id: 1,
         title: "1. 警察署からの着信？",
         text: "あなたの携帯に「千葉県警捜査二課」や「＋１」から始まる番号から着信がありました。自動音声で「あなたの携帯電話が詐欺に使われています」と流れます。",
-        image: "/images/phone_ring_suspicious_anime.png",
+        image: "images/phone_ring_suspicious_anime.png",
         choices: [
             {
                 text: "警察からの電話なら大変だ！と思い、ガイダンスに従う",
@@ -23,7 +23,7 @@ export const scenario = [
         id: 2,
         title: "2. 偽刑事の登場",
         text: "ガイダンスに従うと、低い声の男が出ました。「私は捜査二課のタカハシという刑事だ。あなたを詐欺の容疑者として捜査している」",
-        image: "/images/fake_police_officer_anime.png",
+        image: "images/fake_police_officer_anime.png",
         choices: [
             {
                 text: "「容疑者！？」と動揺し、無実を証明しようと必死になる",
@@ -43,7 +43,7 @@ export const scenario = [
         id: 3,
         title: "3. 偽りの取調べ",
         text: "自称・刑事は畳み掛けます。「無実なら協力できるはずだ。今からあなたの身元引受人などの調査を行う。名前と生年月日を言いなさい」",
-        image: "/images/fake_police_officer_anime.png",
+        image: "images/fake_police_officer_anime.png",
         choices: [
             {
                 text: "警察にお願いされているのだから協力する",
@@ -63,7 +63,7 @@ export const scenario = [
         id: 4,
         title: "4. メッセージで届く逮捕状",
         text: "「出頭する時間はない！もう逮捕状が出ているんだ！」そう言って、LINEで『逮捕状』の画像が送られてきました。",
-        image: "/images/personal_info_leak.png",
+        image: "images/personal_info_leak.png",
         choices: [
             {
                 text: "逮捕状の写真を見て、本物だと信じてしまう",
@@ -83,7 +83,7 @@ export const scenario = [
         id: 5,
         title: "5. ビデオ通話での監視誘導",
         text: "「逃亡の恐れがあるため、ビデオ通話を繋ぎなさい。私の顔を見れば本物の警察官だとわかるはずだ」男は制服姿でビデオ通話に現れました。",
-        image: "/images/video_call_surveillance.png",
+        image: "images/video_call_surveillance.png",
         choices: [
             {
                 text: "制服を着ているから本物の警官だと信じる",
@@ -103,7 +103,7 @@ export const scenario = [
         id: 6,
         title: "6. 資産の潔白証明",
         text: "「あなたの口座にある金が、犯罪収益でないことを証明する必要がある。全ての資産を警察が一時的に預かり、鑑識に回す」",
-        image: "/images/asset_declaration.png",
+        image: "images/asset_declaration.png",
         choices: [
             {
                 text: "疑いを晴らすため、言われた通りにする",
@@ -123,7 +123,7 @@ export const scenario = [
         id: 7,
         title: "7. 捜査用保全口座",
         text: "「裁判所の許可を得た『捜査用保全口座』を用意した。ここへ送金すれば、あなたの金は国によって守られる」",
-        image: "/images/fake_transfer_screen_anime.png",
+        image: "images/fake_transfer_screen_anime.png",
         choices: [
             {
                 text: "国が守ってくれるなら安全だと思い、送金に同意する",
@@ -143,7 +143,7 @@ export const scenario = [
         id: 8,
         title: "8. 共犯の銀行員",
         text: "「銀行の窓口には行くな。あそこの行員は詐欺グループの一味としてマークしている。気取られずにネットバンキングで送金しろ」",
-        image: "/images/net_banking_login.png",
+        image: "images/net_banking_login.png",
         choices: [
             {
                 text: "警察の言うことだから信じて、誰にも言わずに操作する",
@@ -163,7 +163,7 @@ export const scenario = [
         id: 9,
         title: "9. 極秘捜査員への任命",
         text: "「あなたは今から民間の『協力捜査員』だ。この任務は国家機密であり、家族に漏らせば守秘義務違反で逮捕される」",
-        image: "/images/urgency_clock.png",
+        image: "images/urgency_clock.png",
         choices: [
             {
                 text: "捜査員に任命された責任感から、秘密を守る",
@@ -183,7 +183,7 @@ export const scenario = [
         id: 10,
         title: "10. 最後の命令",
         text: "「犯人逮捕の瞬間が迫っている！今すぐATMへ行き、捜査本部と通話を繋いだまま、指示通りに現金を確保（送金）しろ！」",
-        image: "/images/atm_operation_danger.png",
+        image: "images/atm_operation_danger.png",
         choices: [
             {
                 text: "犯人逮捕に協力するため、急いでATMへ向かう",
@@ -205,13 +205,13 @@ export const results = {
     safe: {
         title: "ニセ警察官を撃退！",
         text: "見事です！あなたは警察を騙る卑怯な詐欺師の嘘を全て見抜きました。\n警察官が「口座」「暗証番号」「送金」の話をすることは絶対にない。\nこの鉄則を、ぜひ周りの人にも広めてください。",
-        image: "/images/result_safe_anime.png",
+        image: "images/result_safe_anime.png",
         advice: "【対策】犯人は録音を嫌がります。留守電設定や、通話録音機の設置が最強の防犯です。"
     },
     scammed: {
         title: "偽の権威に騙されないで...",
         text: "「逮捕」「捜査」という言葉に動揺してしまいましたね。\nそれが詐欺師の狙いです。彼らは警察官の制服や専門用語を使って、あなたを信じ込ませようとします。",
-        image: "/images/result_scammed_anime.png",
+        image: "images/result_scammed_anime.png",
         advice: "【対策】「警察です」と電話があったら、一度切って、必ず警察署の番号を調べてかけ直してください。"
     }
 };
