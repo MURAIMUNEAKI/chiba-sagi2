@@ -74,8 +74,8 @@ function StartScreen({ onStart }) {
       exit={{ opacity: 0, y: -20 }}
     >
       <Shield size={64} className="icon-shield" />
-      <h1>千葉県警<br />詐欺防犯シミュレーター</h1>
-      <p>あなたのスマホに忍び寄る「予兆」を見抜けますか？</p>
+      <h1>還付金詐欺<br />防犯シミュレーター</h1>
+      <p>「お金が戻ってくる」という甘い言葉...<br />あなたの財産を狙う魔の手を見抜けますか？</p>
       <button className="btn-primary" onClick={onStart}>診断を開始する</button>
     </motion.div>
   );
